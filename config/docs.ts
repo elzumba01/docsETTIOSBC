@@ -66,5 +66,19 @@ export const docsConfig = {
         },
       ],
     },
+    {
+      title: "AI on Ettios",
+      href: "/docs/ai",
+      items: [
+        {
+          title: "Overview",
+          href: "/docs/ai",
+        },
+        {
+          title: "AI Use Cases",
+          href: "/docs/ai/use-cases",
+        },
+      ],
+    },
   ],
 }
