@@ -92,6 +92,12 @@ export default function NetworkParametersPage() {
         Use these parameters to connect to the Ettios Testnet:
       </p>
 
+      <div className="bg-amber-50 dark:bg-amber-950/50 border-l-4 border-amber-500 p-4 rounded-lg my-6">
+        <p className="mb-0">
+          <strong>Coming soon:</strong> The Ettios Testnet is not live yet — it is expected to launch in late 2026. These parameters are published in advance so you can prepare your tooling and integrations.
+        </p>
+      </div>
+
       <div className="overflow-x-auto my-6">
         <table className="w-full border-collapse shadow-sm">
           <thead>

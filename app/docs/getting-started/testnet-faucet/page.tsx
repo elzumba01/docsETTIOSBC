@@ -34,6 +34,9 @@ export default function TestnetFaucetPage() {
           </svg>
           Before you begin
         </h4>
+        <p className="mb-2">
+          <strong>Note:</strong> The Ettios Testnet is coming soon — expected in late 2026. The faucet will be available once the testnet launches.
+        </p>
         <p className="mb-0">
           Make sure you have MetaMask configured to connect to the Ettios Testnet. If you haven&apos;t done this yet, follow our <Link href="/docs/getting-started/using-metamask" className="text-primary underline underline-offset-4">MetaMask setup guide</Link> first.
         </p>

@@ -49,15 +49,15 @@ export default function GettingStartedPage() {
           <div className="space-y-2">
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Mainnet:</div>
-              <div className="col-span-2">Coming soon</div>
+              <div className="col-span-2">Ettios Mainnet (Live)</div>
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Testnet:</div>
-              <div className="col-span-2">Ettios Testnet</div>
+              <div className="col-span-2">Coming soon — late 2026</div>
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Chain ID:</div>
-              <div className="col-span-2">2238</div>
+              <div className="col-span-2">2237</div>
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Currency:</div>
@@ -65,11 +65,11 @@ export default function GettingStartedPage() {
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">RPC:</div>
-              <div className="col-span-2 break-all">https://testnet-rpc.ettiosblockchain.io</div>
+              <div className="col-span-2 break-all">https://rpc.ettiosblockchain.io</div>
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Explorer:</div>
-              <div className="col-span-2 break-all">https://testnet-scan.ettiosblockchain.io</div>
+              <div className="col-span-2 break-all">https://scan.ettiosblockchain.io</div>
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function GettingStartedPage() {
             </p>
             <div className="rounded-md border border-gray-300 dark:border-gray-700 my-6 overflow-hidden shadow-md">
               <div className="bg-gray-700 text-white px-4 py-2 text-xs font-semibold">
-                <span>Add Ettios Testnet to MetaMask</span>
+                <span>Add Ettios Mainnet to MetaMask</span>
               </div>
               <div className="p-4 bg-gray-50 dark:bg-gray-900">
                 <ol className="list-decimal pl-5 space-y-2">
@@ -99,11 +99,11 @@ export default function GettingStartedPage() {
                   <li>Click "Add Network Manually"</li>
                   <li>Fill in the following details:
                     <ul className="list-disc pl-5 mt-2">
-                      <li><strong>Network Name:</strong> Ettios Testnet</li>
-                      <li><strong>RPC URL:</strong> https://testnet-rpc.ettiosblockchain.io</li>
-                      <li><strong>Chain ID:</strong> 2238</li>
+                      <li><strong>Network Name:</strong> Ettios Mainnet</li>
+                      <li><strong>RPC URL:</strong> https://rpc.ettiosblockchain.io</li>
+                      <li><strong>Chain ID:</strong> 2237</li>
                       <li><strong>Currency Symbol:</strong> ETTIA</li>
-                      <li><strong>Block Explorer URL:</strong> https://testnet-scan.ettiosblockchain.io</li>
+                      <li><strong>Block Explorer URL:</strong> https://scan.ettiosblockchain.io</li>
                     </ul>
                   </li>
                   <li>Click "Save" to add the network</li>
@@ -131,7 +131,7 @@ export default function GettingStartedPage() {
                 <Wallet className="h-5 w-5 text-primary" />
                 <h4 className="font-bold text-lg m-0">Ettios Testnet Faucet</h4>
               </div>
-              <p className="mb-3">Visit our faucet and connect your wallet to receive test tokens:</p>
+              <p className="mb-3">Visit our faucet and connect your wallet to receive test tokens (available when the Ettios Testnet launches — late 2026):</p>
               <a 
                 href="https://faucet.ettiosblockchain.io" 
                 target="_blank" 
