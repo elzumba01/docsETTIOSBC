@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
+import { LanguageSelector } from "@/components/language-selector"
 import { Search } from "@/components/search"
 
 export function MainNav() {
@@ -26,6 +27,7 @@ export function MainNav() {
             <Search />
           </div>
           <nav className="flex items-center space-x-2">
+            <LanguageSelector />
             <ThemeToggle />
             <Button variant="outline" asChild>
               <Link
