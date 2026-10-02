@@ -5,14 +5,14 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
 // Environment variables with fallbacks
-const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
+const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
 const mainnetChainId = process.env.NEXT_PUBLIC_MAINNET_CHAIN_ID || '2237';
-const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettios.io';
+const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettiosblockchain.io';
 const testnetChainId = process.env.NEXT_PUBLIC_TESTNET_CHAIN_ID || '2238';
 const tokenSymbol = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || 'ETTIA';
 const testTokenSymbol = process.env.NEXT_PUBLIC_TESTNET_CURRENCY_SYMBOL || 'tETTIA';
-const explorerUrl = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://explorer.ettios.io';
-const testnetExplorerUrl = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-explorer.ettios.io';
+const explorerUrl = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://scan.ettiosblockchain.io';
+const testnetExplorerUrl = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-scan.ettiosblockchain.io';
 
 export default function UsingMetamaskPage() {
   return (

@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { ChevronRight, ExternalLink } from 'lucide-react';
 
 // Environment variables
-const faucetUrl = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettios.io';
+const faucetUrl = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettiosblockchain.io';
 const tokenSymbol = process.env.NEXT_PUBLIC_TESTNET_CURRENCY_SYMBOL || 'tETTIA';
-const explorerUrl = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-explorer.ettios.io';
+const explorerUrl = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-scan.ettiosblockchain.io';
 
 export default function TestnetFaucetPage() {
   const [address, setAddress] = useState('');
@@ -217,7 +217,7 @@ export default function TestnetFaucetPage() {
           <p className="mb-2">If the faucet is temporarily unavailable:</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Try using the alternative API method</li>
-            <li>Check our <a href="https://status.ettios.io" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">network status page</a> for any ongoing issues</li>
+            <li>Check our <a href="https://status.ettiosblockchain.io" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">network status page</a> for any ongoing issues</li>
             <li>Join our <a href="https://discord.gg/ettios" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-4">Discord community</a> to request assistance</li>
           </ul>
         </div>

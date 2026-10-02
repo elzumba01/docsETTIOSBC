@@ -5,15 +5,15 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
 // Updated environment variables
-const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
-const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettios.io';
+const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
+const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettiosblockchain.io';
 const mainnetChainId = process.env.NEXT_PUBLIC_MAINNET_CHAIN_ID || '2237';
 const testnetChainId = process.env.NEXT_PUBLIC_TESTNET_CHAIN_ID || '2238';
 const tokenSymbol = process.env.NEXT_PUBLIC_CURRENCY_SYMBOL || 'ETTIA';
 const testnetTokenSymbol = process.env.NEXT_PUBLIC_TESTNET_CURRENCY_SYMBOL || 'tETTIA';
-const explorerUrl = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://explorer.ettios.io';
-const testnetExplorerUrl = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-explorer.ettios.io';
-const faucetUrl = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettios.io';
+const explorerUrl = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://scan.ettiosblockchain.io';
+const testnetExplorerUrl = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-scan.ettiosblockchain.io';
+const faucetUrl = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettiosblockchain.io';
 
 export default function NetworkParametersPage() {
   return (
@@ -176,19 +176,19 @@ export default function NetworkParametersPage() {
             </div>
             <div className="grid grid-cols-2">
               <div className="text-muted-foreground">New RPC URL:</div>
-              <div className="font-mono text-sm break-all">https://rpc.ettios.network</div>
+              <div className="font-mono text-sm break-all">{mainnetRpcUrl}</div>
             </div>
             <div className="grid grid-cols-2">
               <div className="text-muted-foreground">Chain ID:</div>
-              <div className="font-mono">9988</div>
+              <div className="font-mono">{mainnetChainId}</div>
             </div>
             <div className="grid grid-cols-2">
               <div className="text-muted-foreground">Currency Symbol:</div>
-              <div className="font-mono">ETT</div>
+              <div className="font-mono">{tokenSymbol}</div>
             </div>
             <div className="grid grid-cols-2">
               <div className="text-muted-foreground">Block Explorer URL:</div>
-              <div className="font-mono text-sm break-all">https://explorer.ettios.network</div>
+              <div className="font-mono text-sm break-all">{explorerUrl}</div>
             </div>
           </div>
         </div>

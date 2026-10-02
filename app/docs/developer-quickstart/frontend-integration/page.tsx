@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ChevronRight, Code } from 'lucide-react';
 
 // Environment variables
-const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
+const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
 const mainnetChainId = process.env.NEXT_PUBLIC_MAINNET_CHAIN_ID || '2237';
 
 export default function FrontendIntegrationPage() {
@@ -233,7 +233,7 @@ const ettios = {
   blockExplorers: {
     default: {
       name: 'EttiosScan',
-      url: 'https://explorer.ettios.io',
+      url: 'https://scan.ettiosblockchain.io',
     },
   },
 }
@@ -381,7 +381,7 @@ function ContractInteraction() {
                 decimals: 18,
               },
               rpcUrls: ['${mainnetRpcUrl}'],
-              blockExplorerUrls: ['https://explorer.ettios.io'],
+              blockExplorerUrls: ['https://scan.ettiosblockchain.io'],
             },
           ],
         });

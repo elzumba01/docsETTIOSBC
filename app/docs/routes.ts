@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 
 // Environment variables with fallbacks
-const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
-const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettios.io';
+const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
+const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettiosblockchain.io';
 const mainnetChainId = process.env.NEXT_PUBLIC_MAINNET_CHAIN_ID || '2237';
 const testnetChainId = process.env.NEXT_PUBLIC_TESTNET_CHAIN_ID || '2238';
 
@@ -43,11 +43,7 @@ export const routes = [
 			},
 			{
 				title: 'Connect with ethers.js',
-				href: '/docs/developer-quickstart/ethers-js',
-			},
-			{
-				title: 'Connect with web3.js',
-				href: '/docs/developer-quickstart/web3-js',
+				href: '/docs/developer-quickstart/connect-ethers',
 			},
 			{
 				title: 'First Transaction',
@@ -88,14 +84,6 @@ export const routes = [
 			{
 				title: 'Metadata Standards',
 				href: '/docs/advanced/metadata-standards',
-			},
-			{
-				title: 'Events and Indexing',
-				href: '/docs/advanced/events-and-indexing',
-			},
-			{
-				title: 'Token Economics',
-				href: '/docs/advanced/token-economics',
 			},
 		],
 	},

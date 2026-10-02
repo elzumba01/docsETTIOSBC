@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { ChevronRight, Terminal, Package, Code } from 'lucide-react';
 
 // Environment variables with fallbacks
-const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
-const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettios.io';
+const mainnetRpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
+const testnetRpcUrl = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettiosblockchain.io';
 const mainnetChainId = process.env.NEXT_PUBLIC_MAINNET_CHAIN_ID || '2237';
 const testnetChainId = process.env.NEXT_PUBLIC_TESTNET_CHAIN_ID || '2238';
 
@@ -240,8 +240,8 @@ ettios_testnet = "${testnetRpcUrl}"
 ettios_mainnet = "${mainnetRpcUrl}"
 
 [etherscan]
-ettios_testnet = { url = "https://testnet-explorer.ettios.io/api" }
-ettios_mainnet = { url = "https://explorer.ettios.io/api" }`}</pre>
+ettios_testnet = { url = "https://testnet-scan.ettiosblockchain.io/api" }
+ettios_mainnet = { url = "https://scan.ettiosblockchain.io/api" }`}</pre>
           </div>
           <p className="mt-4 text-sm text-muted-foreground">
             For private key management, you can create a <code>.env</code> file and load it using Cast:

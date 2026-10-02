@@ -6,10 +6,10 @@ import { ChevronRight, Globe, Zap, Shield, Code, DollarSign, FileText } from 'lu
 
 // Environment variables for links - with fallbacks if not defined
 const githubUrl = process.env.NEXT_PUBLIC_GITHUB_URL || 'https://github.com/ettios';
-const explorerUrl = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://explorer.ettios.io';
-const faucetUrl = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettios.io';
+const explorerUrl = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://scan.ettiosblockchain.io';
+const faucetUrl = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettiosblockchain.io';
 const chainId = process.env.NEXT_PUBLIC_MAINNET_CHAIN_ID || '2237';
-const rpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
+const rpcUrl = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
 
 const IntroductionPage = () => {
   return React.createElement("div", { className: "prose prose-slate dark:prose-invert max-w-none" },

@@ -9,16 +9,16 @@ export const TWITTER_URL = process.env.NEXT_PUBLIC_TWITTER_URL || 'https://twitt
 export const DISCORD_URL = process.env.NEXT_PUBLIC_DISCORD_URL || 'https://discord.gg/ettios';
 export const TELEGRAM_URL = process.env.NEXT_PUBLIC_TELEGRAM_URL || 'https://t.me/ettioschain';
 export const MEDIUM_URL = process.env.NEXT_PUBLIC_MEDIUM_URL || 'https://medium.com/@ettioschain';
-export const EXPLORER_URL = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://explorer.ettios.io';
-export const TESTNET_EXPLORER_URL = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-explorer.ettios.io';
-export const DOCS_URL = process.env.NEXT_PUBLIC_DOCS_URL || 'https://docs.ettios.io';
-export const FAUCET_URL = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettios.io';
+export const EXPLORER_URL = process.env.NEXT_PUBLIC_EXPLORER_URL || 'https://scan.ettiosblockchain.io';
+export const TESTNET_EXPLORER_URL = process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL || 'https://testnet-scan.ettiosblockchain.io';
+export const DOCS_URL = process.env.NEXT_PUBLIC_DOCS_URL || 'https://docs.ettiosblockchain.io';
+export const FAUCET_URL = process.env.NEXT_PUBLIC_FAUCET_URL || 'https://faucet.ettiosblockchain.io';
 
 // RPC Endpoints
-export const MAINNET_RPC = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettios.io';
-export const TESTNET_RPC = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettios.io';
-export const MAINNET_WEBSOCKET = process.env.NEXT_PUBLIC_MAINNET_WEBSOCKET || 'wss://ws.ettios.io';
-export const TESTNET_WEBSOCKET = process.env.NEXT_PUBLIC_TESTNET_WEBSOCKET || 'wss://testnet-ws.ettios.io';
+export const MAINNET_RPC = process.env.NEXT_PUBLIC_MAINNET_RPC || 'https://rpc.ettiosblockchain.io';
+export const TESTNET_RPC = process.env.NEXT_PUBLIC_TESTNET_RPC || 'https://testnet-rpc.ettiosblockchain.io';
+export const MAINNET_WEBSOCKET = process.env.NEXT_PUBLIC_MAINNET_WEBSOCKET || 'wss://ws.ettiosblockchain.io';
+export const TESTNET_WEBSOCKET = process.env.NEXT_PUBLIC_TESTNET_WEBSOCKET || 'wss://testnet-ws.ettiosblockchain.io';
 
 // Chain Configuration
 export const CHAIN_NAME = process.env.NEXT_PUBLIC_CHAIN_NAME || 'Ettios';
@@ -31,7 +31,7 @@ export const TESTNET_CURRENCY_SYMBOL = process.env.NEXT_PUBLIC_TESTNET_CURRENCY_
 // Site Configuration
 export const SITE_NAME = process.env.NEXT_PUBLIC_SITE_NAME || 'Ettios Documentation';
 export const SITE_DESCRIPTION = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || 'Complete documentation for the Ettios EVM-compatible blockchain';
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://docs.ettios.io';
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://docs.ettiosblockchain.io';
 
 // Helper function for network configuration
 export const getNetworkConfig = (isTestnet: boolean = false) => {

@@ -16,7 +16,7 @@ export default function FirstSmartContractPage() {
       <ul>
         <li><a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> (v14 or later) and npm installed</li>
         <li><a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">MetaMask</a> configured with Ettios network</li>
-        <li>Some test ETT tokens for transaction fees (get them from our <Link href="/docs/getting-started/testnet-faucet">faucet</Link>)</li>
+        <li>Some test ETTIA tokens for transaction fees (get them from our <Link href="/docs/getting-started/testnet-faucet">faucet</Link>)</li>
       </ul>
 
       <h2>Setting Up Your Project</h2>
@@ -86,12 +86,12 @@ const config: HardhatUserConfig = {
   solidity: "0.8.19",
   networks: {
     ettiosTestnet: {
-      url: "https://testnet-rpc.ettiosblock.net",
+      url: "https://testnet-rpc.ettiosblockchain.io",
       accounts: [PRIVATE_KEY],
-      chainId: 9989,
+      chainId: 2238,
     },
     ettiosMainnet: {
-      url: "https://rpc.ettiosblock.net",
+      url: "https://rpc.ettiosblockchain.io",
       accounts: [PRIVATE_KEY],
       chainId: 2237,
     }

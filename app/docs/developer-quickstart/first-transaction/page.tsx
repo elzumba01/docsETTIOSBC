@@ -76,7 +76,7 @@ export default function FirstTransactionPage() {
         <div className="border rounded-lg p-4 bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-sm">
           <h4 className="font-bold mb-1">Step 1: Open MetaMask</h4>
           <p className="mb-0">
-            Make sure MetaMask is set to the Ettios Testnet network (Chain ID: 2237).
+            Make sure MetaMask is set to the Ettios Testnet network (Chain ID: 2238).
           </p>
         </div>
         
@@ -132,7 +132,7 @@ async function sendTransaction() {
       
       // Check if connected to Ettios Testnet
       const network = await provider.getNetwork();
-      if (network.chainId !== 2237) {
+      if (network.chainId !== 2238) {
         console.error("Please connect to Ettios Testnet");
         return;
       }
@@ -210,7 +210,7 @@ async function sendTransaction() {
       
       // Check if connected to Ettios Testnet
       const network = await provider.getNetwork();
-      if (network.chainId !== 2237) {
+      if (network.chainId !== 2238) {
         console.error("Please connect to Ettios Testnet");
         return;
       }
@@ -290,7 +290,7 @@ const { ethers } = require("ethers");
 async function sendTransactionWithPrivateKey() {
   try {
     // Ettios Testnet RPC URL
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettios.io");
+    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
     
     // Private key (NEVER hardcode in production)
     const privateKey = "YOUR_PRIVATE_KEY"; // Replace with your private key
@@ -365,7 +365,7 @@ const { ethers } = require("ethers");
 async function sendTransactionWithPrivateKey() {
   try {
     // Ettios Testnet RPC URL
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettios.io");
+    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
     
     // Private key (NEVER hardcode in production)
     const privateKey = "YOUR_PRIVATE_KEY"; // Replace with your private key
@@ -463,7 +463,7 @@ async function sendTransaction() {
       
       // Check if connected to Ettios Testnet
       const networkId = await web3.eth.net.getId();
-      if (networkId !== 2237) {
+      if (networkId !== 2238) {
         console.error("Please connect to Ettios Testnet");
         return;
       }
@@ -542,7 +542,7 @@ async function sendTransaction() {
       
       // Check if connected to Ettios Testnet
       const networkId = await web3.eth.net.getId();
-      if (networkId !== 2237) {
+      if (networkId !== 2238) {
         console.error("Please connect to Ettios Testnet");
         return;
       }
@@ -621,7 +621,7 @@ sendTransaction();`}</code></pre>
 async function checkTransactionStatus(txHash) {
   try {
     // Connect to Ettios Testnet
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettios.io");
+    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
     
     // Get transaction details
     const tx = await provider.getTransaction(txHash);
@@ -676,7 +676,7 @@ checkTransactionStatus("0xYourTransactionHashHere");`)}>
 async function checkTransactionStatus(txHash) {
   try {
     // Connect to Ettios Testnet
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettios.io");
+    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
     
     // Get transaction details
     const tx = await provider.getTransaction(txHash);
@@ -733,7 +733,7 @@ checkTransactionStatus("0xYourTransactionHashHere");`}</code></pre>
         <h4 className="font-bold mt-0">Ettios Testnet Explorer</h4>
         <p className="mb-4">Visit the block explorer and search for your transaction hash:</p>
         <a 
-          href="https://testnet-explorer.ettios.io" 
+          href="https://testnet-scan.ettiosblockchain.io" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"

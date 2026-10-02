@@ -57,7 +57,7 @@ export default function GettingStartedPage() {
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Chain ID:</div>
-              <div className="col-span-2">2237</div>
+              <div className="col-span-2">2238</div>
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Currency:</div>
@@ -65,11 +65,11 @@ export default function GettingStartedPage() {
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">RPC:</div>
-              <div className="col-span-2 break-all">https://testnet-rpc.ettios.io</div>
+              <div className="col-span-2 break-all">https://testnet-rpc.ettiosblockchain.io</div>
             </div>
             <div className="grid grid-cols-3 gap-1">
               <div className="font-bold">Explorer:</div>
-              <div className="col-span-2 break-all">https://testnet-explorer.ettios.io</div>
+              <div className="col-span-2 break-all">https://testnet-scan.ettiosblockchain.io</div>
             </div>
           </div>
         </div>
@@ -100,10 +100,10 @@ export default function GettingStartedPage() {
                   <li>Fill in the following details:
                     <ul className="list-disc pl-5 mt-2">
                       <li><strong>Network Name:</strong> Ettios Testnet</li>
-                      <li><strong>RPC URL:</strong> https://testnet-rpc.ettios.io</li>
-                      <li><strong>Chain ID:</strong> 2237</li>
+                      <li><strong>RPC URL:</strong> https://testnet-rpc.ettiosblockchain.io</li>
+                      <li><strong>Chain ID:</strong> 2238</li>
                       <li><strong>Currency Symbol:</strong> ETTIA</li>
-                      <li><strong>Block Explorer URL:</strong> https://testnet-explorer.ettios.io</li>
+                      <li><strong>Block Explorer URL:</strong> https://testnet-scan.ettiosblockchain.io</li>
                     </ul>
                   </li>
                   <li>Click "Save" to add the network</li>
@@ -133,7 +133,7 @@ export default function GettingStartedPage() {
               </div>
               <p className="mb-3">Visit our faucet and connect your wallet to receive test tokens:</p>
               <a 
-                href="https://faucet.ettios.io" 
+                href="https://faucet.ettiosblockchain.io" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"

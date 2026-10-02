@@ -18,7 +18,7 @@ export default function Web3JsPage() {
         </p>
         <div className="mt-6">
           <Link 
-            href="/docs/developer-quickstart/ethers-js" 
+            href="/docs/developer-quickstart/connect-ethers" 
             className="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors shadow-sm"
           >
             View ethers.js Guide Instead
