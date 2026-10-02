@@ -204,7 +204,7 @@ const IntroductionPage = () => {
           ),
           React.createElement("tr", null,
             React.createElement("td", { className: "border p-3" }, "Energy consumption"),
-            React.createElement("td", { className: "border p-3 font-mono" }, "Very low (PoS)"),
+            React.createElement("td", { className: "border p-3 font-mono" }, "Very low (NPoS)"),
             React.createElement("td", { className: "border p-3 font-mono" }, "Low (PoS)"),
             React.createElement("td", { className: "border p-3" }, "Eco-friendly")
           )
@@ -222,7 +222,7 @@ const IntroductionPage = () => {
     
     React.createElement("ul", { className: "list-disc pl-6 mt-4 space-y-2" },
       React.createElement("li", null,
-        React.createElement("strong", null, "Advanced consensus mechanism"), ": Ettios uses a Proof of Stake (PoS) consensus with a Byzantine Fault Tolerance (BFT) algorithm, providing both security and performance"
+        React.createElement("strong", null, "Advanced consensus mechanism"), ": Ettios uses Nominated Proof of Stake (NPoS) consensus with a Byzantine Fault Tolerance (BFT) algorithm, where token holders nominate a set of trusted validators to produce blocks, providing both security and performance"
       ),
       React.createElement("li", null,
         React.createElement("strong", null, "Regular security audits"), ": The core protocol undergoes continuous auditing by leading blockchain security firms"
@@ -275,7 +275,7 @@ const IntroductionPage = () => {
           React.createElement("p", { className: "text-center font-semibold text-yellow-700 dark:text-yellow-300" }, "Smart Contract Layer (EVM Compatibility)")
         ),
         React.createElement("div", { className: "absolute bottom-[180px] w-full h-[60px] bg-purple-500/20 flex items-center justify-center" },
-          React.createElement("p", { className: "text-center font-semibold text-purple-700 dark:text-purple-300" }, "Consensus Layer (PoS with BFT)")
+          React.createElement("p", { className: "text-center font-semibold text-purple-700 dark:text-purple-300" }, "Consensus Layer (NPoS with BFT)")
         ),
         React.createElement("div", { className: "absolute bottom-[240px] w-full h-[60px] bg-red-500/20 flex items-center justify-center" },
           React.createElement("p", { className: "text-center font-semibold text-red-700 dark:text-red-300" }, "Network Layer (P2P Communication)")

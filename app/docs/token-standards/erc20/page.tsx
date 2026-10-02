@@ -28,7 +28,7 @@ export default function ERC20Page() {
         <ul className="list-disc pl-5 mt-2 mb-0">
           <li>Basic knowledge of Solidity programming</li>
           <li>A development environment set up (see our <Link href="/docs/developer-quickstart/development-environment" className="text-primary underline underline-offset-4">Development Environment</Link> guide)</li>
-          <li>Some test ETTIA for deploying contracts (get them from our <Link href="/docs/getting-started/testnet-faucet" className="text-primary underline underline-offset-4">testnet faucet</Link>)</li>
+          <li>Some ETTIA for deploying contracts</li>
         </ul>
       </div>
 
@@ -268,7 +268,7 @@ main()
       </div>
 
       <p>
-        To deploy to the Ettios testnet:
+        To deploy to the Ettios mainnet:
       </p>
 
       <div className="rounded-md border border-gray-300 dark:border-gray-700 my-6 overflow-hidden shadow-md">
@@ -276,7 +276,7 @@ main()
           <span>Terminal</span>
         </div>
         <div className="p-4 overflow-x-auto bg-gray-900 text-white">
-          <pre className="text-sm font-mono leading-relaxed"><code>npx hardhat run scripts/deploy.js --network ettiosTestnet</code></pre>
+          <pre className="text-sm font-mono leading-relaxed"><code>npx hardhat run scripts/deploy.js --network ettiosMainnet</code></pre>
         </div>
       </div>
 

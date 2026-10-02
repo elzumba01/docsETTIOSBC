@@ -390,11 +390,11 @@ main()
       </div>
 
       <p>
-        Deploy to the Ettios testnet:
+        Deploy to the Ettios mainnet:
       </p>
 
       <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto my-6">
-        <code>npx hardhat run scripts/deploy-multi-token.js --network ettiosTestnet</code>
+        <code>npx hardhat run scripts/deploy-multi-token.js --network ettiosMainnet</code>
       </div>
 
       <h2 className="text-3xl font-bold mt-14 border-b pb-2">Interacting with ERC-1155 Tokens</h2>

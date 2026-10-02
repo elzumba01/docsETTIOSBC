@@ -16,7 +16,7 @@ export default function FirstSmartContractPage() {
       <ul>
         <li><a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js</a> (v14 or later) and npm installed</li>
         <li><a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">MetaMask</a> configured with Ettios network</li>
-        <li>Some test ETTIA tokens for transaction fees (get them from our <Link href="/docs/getting-started/testnet-faucet">faucet</Link>)</li>
+        <li>Some ETTIA tokens for transaction fees</li>
       </ul>
 
       <h2>Setting Up Your Project</h2>

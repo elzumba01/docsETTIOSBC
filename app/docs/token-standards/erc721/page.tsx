@@ -28,7 +28,7 @@ export default function ERC721Page() {
         <ul className="list-disc pl-5 mt-2 mb-0">
           <li>Basic knowledge of Solidity programming</li>
           <li>A development environment set up (see our <Link href="/docs/developer-quickstart/development-environment" className="text-primary underline underline-offset-4">Development Environment</Link> guide)</li>
-          <li>Some test ETTIA for deploying contracts (get them from our <Link href="/docs/getting-started/testnet-faucet" className="text-primary underline underline-offset-4">testnet faucet</Link>)</li>
+          <li>Some ETTIA for deploying contracts</li>
           <li>Basic understanding of NFT concepts</li>
         </ul>
       </div>
@@ -342,7 +342,7 @@ main()
       </div>
 
       <p>
-        To deploy to the Ettios testnet:
+        To deploy to the Ettios mainnet:
       </p>
 
       <div className="rounded-md border bg-slate-950 dark:bg-slate-900 my-6 overflow-hidden shadow-md">
@@ -350,7 +350,7 @@ main()
           <span>Terminal</span>
         </div>
         <div className="p-4 overflow-x-auto">
-          <pre className="text-sm text-slate-50 font-mono leading-relaxed"><code>npx hardhat run scripts/deploy-nft.js --network ettiosTestnet</code></pre>
+          <pre className="text-sm text-slate-50 font-mono leading-relaxed"><code>npx hardhat run scripts/deploy-nft.js --network ettiosMainnet</code></pre>
         </div>
       </div>
 

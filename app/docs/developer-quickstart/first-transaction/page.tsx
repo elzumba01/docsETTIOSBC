@@ -31,8 +31,8 @@ export default function FirstTransactionPage() {
           Before you begin, make sure you have:
         </p>
         <ul className="list-disc pl-5 mt-2 mb-0">
-          <li>A wallet with Ettios Testnet configured (see <Link href="/docs/getting-started/wallet-setup" className="text-primary underline underline-offset-4">Wallet Setup</Link>)</li>
-          <li>Some test ETTIA tokens from the <Link href="/docs/getting-started/testnet-faucet" className="text-primary underline underline-offset-4">Ettios Faucet</Link></li>
+          <li>A wallet with Ettios Mainnet configured (see <Link href="/docs/getting-started/wallet-setup" className="text-primary underline underline-offset-4">Wallet Setup</Link>)</li>
+          <li>Some ETTIA tokens to cover transaction fees</li>
           <li>Basic familiarity with JavaScript and blockchain concepts</li>
         </ul>
       </div>
@@ -76,7 +76,7 @@ export default function FirstTransactionPage() {
         <div className="border rounded-lg p-4 bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 shadow-sm">
           <h4 className="font-bold mb-1">Step 1: Open MetaMask</h4>
           <p className="mb-0">
-            Make sure MetaMask is set to the Ettios Testnet network (Chain ID: 2238).
+            Make sure MetaMask is set to the Ettios Mainnet network (Chain ID: 2237).
           </p>
         </div>
         
@@ -121,7 +121,7 @@ export default function FirstTransactionPage() {
           <button className="text-gray-200 hover:text-white" onClick={() => handleCopyClick(`// Import ethers.js
 const { ethers } = require("ethers");
 
-// Connect to Ettios Testnet
+// Connect to Ettios Mainnet
 async function sendTransaction() {
   try {
     // For browser environments with MetaMask
@@ -130,10 +130,10 @@ async function sendTransaction() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       
-      // Check if connected to Ettios Testnet
+      // Check if connected to Ettios Mainnet
       const network = await provider.getNetwork();
-      if (network.chainId !== 2238) {
-        console.error("Please connect to Ettios Testnet");
+      if (network.chainId !== 2237) {
+        console.error("Please connect to Ettios Mainnet");
         return;
       }
       
@@ -199,7 +199,7 @@ sendTransaction();`)}>
           <pre className="text-sm font-mono leading-relaxed"><code>{`// Import ethers.js
 const { ethers } = require("ethers");
 
-// Connect to Ettios Testnet
+// Connect to Ettios Mainnet
 async function sendTransaction() {
   try {
     // For browser environments with MetaMask
@@ -208,10 +208,10 @@ async function sendTransaction() {
       const provider = new ethers.providers.Web3Provider(window.ethereum);
       const signer = provider.getSigner();
       
-      // Check if connected to Ettios Testnet
+      // Check if connected to Ettios Mainnet
       const network = await provider.getNetwork();
-      if (network.chainId !== 2238) {
-        console.error("Please connect to Ettios Testnet");
+      if (network.chainId !== 2237) {
+        console.error("Please connect to Ettios Mainnet");
         return;
       }
       
@@ -289,8 +289,8 @@ const { ethers } = require("ethers");
 
 async function sendTransactionWithPrivateKey() {
   try {
-    // Ettios Testnet RPC URL
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+    // Ettios Mainnet RPC URL
+    const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
     
     // Private key (NEVER hardcode in production)
     const privateKey = "YOUR_PRIVATE_KEY"; // Replace with your private key
@@ -364,8 +364,8 @@ const { ethers } = require("ethers");
 
 async function sendTransactionWithPrivateKey() {
   try {
-    // Ettios Testnet RPC URL
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+    // Ettios Mainnet RPC URL
+    const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
     
     // Private key (NEVER hardcode in production)
     const privateKey = "YOUR_PRIVATE_KEY"; // Replace with your private key
@@ -453,7 +453,7 @@ sendTransactionWithPrivateKey();`}</code></pre>
           <button className="text-gray-200 hover:text-white" onClick={() => handleCopyClick(`// Import Web3
 const Web3 = require('web3');
 
-// Connect to Ettios Testnet
+// Connect to Ettios Mainnet
 async function sendTransaction() {
   try {
     // For browser environments with MetaMask
@@ -461,10 +461,10 @@ async function sendTransaction() {
       await window.ethereum.request({ method: 'eth_requestAccounts' });
       const web3 = new Web3(window.ethereum);
       
-      // Check if connected to Ettios Testnet
+      // Check if connected to Ettios Mainnet
       const networkId = await web3.eth.net.getId();
-      if (networkId !== 2238) {
-        console.error("Please connect to Ettios Testnet");
+      if (networkId !== 2237) {
+        console.error("Please connect to Ettios Mainnet");
         return;
       }
       
@@ -532,7 +532,7 @@ sendTransaction();`)}>
           <pre className="text-sm font-mono leading-relaxed"><code>{`// Import Web3
 const Web3 = require('web3');
 
-// Connect to Ettios Testnet
+// Connect to Ettios Mainnet
 async function sendTransaction() {
   try {
     // For browser environments with MetaMask
@@ -540,10 +540,10 @@ async function sendTransaction() {
       await window.ethereum.request({ method: 'eth_requestAccounts' });
       const web3 = new Web3(window.ethereum);
       
-      // Check if connected to Ettios Testnet
+      // Check if connected to Ettios Mainnet
       const networkId = await web3.eth.net.getId();
-      if (networkId !== 2238) {
-        console.error("Please connect to Ettios Testnet");
+      if (networkId !== 2237) {
+        console.error("Please connect to Ettios Mainnet");
         return;
       }
       
@@ -620,8 +620,8 @@ sendTransaction();`}</code></pre>
 
 async function checkTransactionStatus(txHash) {
   try {
-    // Connect to Ettios Testnet
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+    // Connect to Ettios Mainnet
+    const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
     
     // Get transaction details
     const tx = await provider.getTransaction(txHash);
@@ -675,8 +675,8 @@ checkTransactionStatus("0xYourTransactionHashHere");`)}>
 
 async function checkTransactionStatus(txHash) {
   try {
-    // Connect to Ettios Testnet
-    const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+    // Connect to Ettios Mainnet
+    const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
     
     // Get transaction details
     const tx = await provider.getTransaction(txHash);
@@ -730,10 +730,10 @@ checkTransactionStatus("0xYourTransactionHashHere");`}</code></pre>
       </p>
 
       <div className="p-4 border rounded-md bg-gradient-to-r from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 my-6">
-        <h4 className="font-bold mt-0">Ettios Testnet Explorer</h4>
+        <h4 className="font-bold mt-0">Ettios Mainnet Explorer</h4>
         <p className="mb-4">Visit the block explorer and search for your transaction hash:</p>
         <a 
-          href="https://testnet-scan.ettiosblockchain.io" 
+          href="https://scan.ettiosblockchain.io" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"

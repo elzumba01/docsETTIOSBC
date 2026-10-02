@@ -42,9 +42,7 @@ export default function DevelopmentEnvironmentPage() {
             </Link> for the Ettios network
           </li>
           <li>
-            <Link href="/docs/getting-started/testnet-faucet" className="text-primary underline underline-offset-4">
-              Testnet tokens
-            </Link> for testing your contracts
+            ETTIA tokens for deployment transaction fees
           </li>
         </ul>
       </div>
@@ -249,7 +247,7 @@ ettios_mainnet = { url = "https://scan.ettiosblockchain.io/api" }`}</pre>
           <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto mt-2">
             <pre>{`# Deploy script example
 PRIVATE_KEY=$(cast wallet import-private-key /path/to/privatekey)
-forge script script/Deploy.s.sol:DeployScript --rpc-url ettios_testnet --broadcast --verify`}</pre>
+forge script script/Deploy.s.sol:DeployScript --rpc-url ettios_mainnet --broadcast --verify`}</pre>
           </div>
         </div>
       </div>

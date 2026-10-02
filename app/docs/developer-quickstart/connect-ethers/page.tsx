@@ -69,11 +69,11 @@ export default function ConnectEthersPage() {
           <button className="text-gray-200 hover:text-white" onClick={() => handleCopyClick(`// Import ethers.js
 const { ethers } = require("ethers");
 
-// Ettios Testnet RPC URL
-const ETTIOS_TESTNET_RPC = "https://testnet-rpc.ettiosblockchain.io";
+// Ettios Mainnet RPC URL
+const ETTIOS_MAINNET_RPC = "https://rpc.ettiosblockchain.io";
 
 // Create a provider
-const provider = new ethers.providers.JsonRpcProvider(ETTIOS_TESTNET_RPC);
+const provider = new ethers.providers.JsonRpcProvider(ETTIOS_MAINNET_RPC);
 
 async function main() {
   try {
@@ -102,11 +102,11 @@ main();`)}>
           <pre className="text-sm font-mono leading-relaxed"><code>{`// Import ethers.js
 const { ethers } = require("ethers");
 
-// Ettios Testnet RPC URL
-const ETTIOS_TESTNET_RPC = "https://testnet-rpc.ettiosblockchain.io";
+// Ettios Mainnet RPC URL
+const ETTIOS_MAINNET_RPC = "https://rpc.ettiosblockchain.io";
 
 // Create a provider
-const provider = new ethers.providers.JsonRpcProvider(ETTIOS_TESTNET_RPC);
+const provider = new ethers.providers.JsonRpcProvider(ETTIOS_MAINNET_RPC);
 
 async function main() {
   try {
@@ -132,7 +132,7 @@ main();`}</code></pre>
       </div>
 
       <p>
-        This example connects to the Ettios Testnet and retrieves basic network information. To run it:
+        This example connects to the Ettios Mainnet and retrieves basic network information. To run it:
       </p>
 
       <div className="rounded-md border border-gray-300 dark:border-gray-700 my-6 overflow-hidden shadow-md">
@@ -181,17 +181,17 @@ async function connectToMetaMask() {
     const network = await provider.getNetwork();
     console.log("Connected to network:", network.name, "Chain ID:", network.chainId);
     
-    // The expected Ettios Testnet Chain ID
-    const ETTIOS_TESTNET_CHAIN_ID = 2238;
+    // The expected Ettios Mainnet Chain ID
+    const ETTIOS_MAINNET_CHAIN_ID = 2237;
     
-    if (network.chainId !== ETTIOS_TESTNET_CHAIN_ID) {
-      console.warn("Warning: Not connected to Ettios Testnet!");
+    if (network.chainId !== ETTIOS_MAINNET_CHAIN_ID) {
+      console.warn("Warning: Not connected to Ettios Mainnet!");
       
       // Optional: Prompt user to switch networks
       try {
         await window.ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '0x8BE' }], // 0x8BE is hex for 2238
+          params: [{ chainId: '0x8BD' }], // 0x8BD is hex for 2237
         });
       } catch (switchError) {
         // This error code indicates that the chain has not been added to MetaMask
@@ -200,15 +200,15 @@ async function connectToMetaMask() {
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
               params: [{
-                chainId: '0x8BE',
-                chainName: 'Ettios Testnet',
+                chainId: '0x8BD',
+                chainName: 'Ettios Mainnet',
                 nativeCurrency: {
                   name: 'ETTIA',
                   symbol: 'ETTIA',
                   decimals: 18
                 },
-                rpcUrls: ['https://testnet-rpc.ettiosblockchain.io'],
-                blockExplorerUrls: ['https://testnet-scan.ettiosblockchain.io'],
+                rpcUrls: ['https://rpc.ettiosblockchain.io'],
+                blockExplorerUrls: ['https://scan.ettiosblockchain.io'],
               }],
             });
           } catch (addError) {
@@ -270,17 +270,17 @@ async function connectToMetaMask() {
     const network = await provider.getNetwork();
     console.log("Connected to network:", network.name, "Chain ID:", network.chainId);
     
-    // The expected Ettios Testnet Chain ID
-    const ETTIOS_TESTNET_CHAIN_ID = 2238;
+    // The expected Ettios Mainnet Chain ID
+    const ETTIOS_MAINNET_CHAIN_ID = 2237;
     
-    if (network.chainId !== ETTIOS_TESTNET_CHAIN_ID) {
-      console.warn("Warning: Not connected to Ettios Testnet!");
+    if (network.chainId !== ETTIOS_MAINNET_CHAIN_ID) {
+      console.warn("Warning: Not connected to Ettios Mainnet!");
       
       // Optional: Prompt user to switch networks
       try {
         await window.ethereum.request({
           method: 'wallet_switchEthereumChain',
-          params: [{ chainId: '0x8BE' }], // 0x8BE is hex for 2238
+          params: [{ chainId: '0x8BD' }], // 0x8BD is hex for 2237
         });
       } catch (switchError) {
         // This error code indicates that the chain has not been added to MetaMask
@@ -289,15 +289,15 @@ async function connectToMetaMask() {
             await window.ethereum.request({
               method: 'wallet_addEthereumChain',
               params: [{
-                chainId: '0x8BE',
-                chainName: 'Ettios Testnet',
+                chainId: '0x8BD',
+                chainName: 'Ettios Mainnet',
                 nativeCurrency: {
                   name: 'ETTIA',
                   symbol: 'ETTIA',
                   decimals: 18
                 },
-                rpcUrls: ['https://testnet-rpc.ettiosblockchain.io'],
-                blockExplorerUrls: ['https://testnet-scan.ettiosblockchain.io'],
+                rpcUrls: ['https://rpc.ettiosblockchain.io'],
+                blockExplorerUrls: ['https://scan.ettiosblockchain.io'],
               }],
             });
           } catch (addError) {
@@ -342,7 +342,7 @@ main();`}</code></pre>
           <button className="text-gray-200 hover:text-white" onClick={() => handleCopyClick(`const { ethers } = require("ethers");
 
 // Connect to Ettios
-const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
 
 // Contract ABI and address
 const contractABI = [
@@ -392,7 +392,7 @@ interactWithContract();`)}>
           <pre className="text-sm font-mono leading-relaxed"><code>{`const { ethers } = require("ethers");
 
 // Connect to Ettios
-const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
 
 // Contract ABI and address
 const contractABI = [
@@ -463,7 +463,7 @@ interactWithContract();`}</code></pre>
           <button className="text-gray-200 hover:text-white" onClick={() => handleCopyClick(`const { ethers } = require("ethers");
 
 // Connect to Ettios
-const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
 
 // Contract ABI (just the events we're interested in) and address
 const contractABI = [
@@ -534,7 +534,7 @@ listenToEvents();`)}>
           <pre className="text-sm font-mono leading-relaxed"><code>{`const { ethers } = require("ethers");
 
 // Connect to Ettios
-const provider = new ethers.providers.JsonRpcProvider("https://testnet-rpc.ettiosblockchain.io");
+const provider = new ethers.providers.JsonRpcProvider("https://rpc.ettiosblockchain.io");
 
 // Contract ABI (just the events we're interested in) and address
 const contractABI = [
@@ -654,13 +654,13 @@ function EttiosConnector() {
       setBalance(ethers.utils.formatEther(balance));
       
       // Check if on Ettios network
-      const ETTIOS_TESTNET_CHAIN_ID = 2238;
-      if (network.chainId !== ETTIOS_TESTNET_CHAIN_ID) {
+      const ETTIOS_MAINNET_CHAIN_ID = 2237;
+      if (network.chainId !== ETTIOS_MAINNET_CHAIN_ID) {
         // Prompt to switch networks
         try {
           await window.ethereum.request({
             method: 'wallet_switchEthereumChain',
-            params: [{ chainId: '0x8BE' }], // Hex for 2238
+            params: [{ chainId: '0x8BD' }], // Hex for 2237
           });
         } catch (switchError) {
           // Handle error or add network
@@ -790,13 +790,13 @@ function EttiosConnector() {
       setBalance(ethers.utils.formatEther(balance));
       
       // Check if on Ettios network
-      const ETTIOS_TESTNET_CHAIN_ID = 2238;
-      if (network.chainId !== ETTIOS_TESTNET_CHAIN_ID) {
+      const ETTIOS_MAINNET_CHAIN_ID = 2237;
+      if (network.chainId !== ETTIOS_MAINNET_CHAIN_ID) {
         // Prompt to switch networks
         try {
           await window.ethereum.request({
             method: 'wallet_switchEthereumChain',
-            params: [{ chainId: '0x8BE' }], // Hex for 2238
+            params: [{ chainId: '0x8BD' }], // Hex for 2237
           });
         } catch (switchError) {
           // Handle error or add network

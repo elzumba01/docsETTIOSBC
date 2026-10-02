@@ -79,7 +79,7 @@ export default function NetworkParametersPage() {
             </tr>
             <tr>
               <td className="border border-border p-3">Consensus</td>
-              <td className="border border-border p-3 font-mono">Proof of Stake</td>
+              <td className="border border-border p-3 font-mono">Nominated Proof of Stake (NPoS)</td>
               <td className="border border-border p-3">Consensus mechanism used</td>
             </tr>
           </tbody>
