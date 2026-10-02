@@ -103,10 +103,16 @@ export default function AIOverviewPage() {
 
       <h2 className="text-3xl font-bold mt-14 border-b pb-2">Next Steps</h2>
 
-      <div className="grid md:grid-cols-2 gap-4 my-6">
+      <div className="grid md:grid-cols-3 gap-4 my-6">
         <Link href="/docs/ai/use-cases" className="flex flex-col p-4 rounded-lg border bg-card hover:bg-accent hover:text-accent-foreground transition-colors">
           <h3 className="text-lg font-medium mb-2">AI Use Cases</h3>
           <p className="text-muted-foreground flex-grow">Explore real-world applications of AI on Ettios across DeFi, gaming, identity, and more.</p>
+          <div className="text-primary mt-2">Read more →</div>
+        </Link>
+
+        <Link href="/docs/ai/building-ai-dapps" className="flex flex-col p-4 rounded-lg border bg-card hover:bg-accent hover:text-accent-foreground transition-colors">
+          <h3 className="text-lg font-medium mb-2">Building AI dApps</h3>
+          <p className="text-muted-foreground flex-grow">Step-by-step guide with code: build an AI oracle that publishes signals on-chain.</p>
           <div className="text-primary mt-2">Read more →</div>
         </Link>
 

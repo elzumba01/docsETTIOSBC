@@ -78,6 +78,10 @@ export const docsConfig = {
           title: "AI Use Cases",
           href: "/docs/ai/use-cases",
         },
+        {
+          title: "Building AI dApps",
+          href: "/docs/ai/building-ai-dapps",
+        },
       ],
     },
   ],
